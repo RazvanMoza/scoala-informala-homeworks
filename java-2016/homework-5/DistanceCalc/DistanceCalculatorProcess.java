@@ -4,17 +4,23 @@
 package DistanceCalc;
 
 public class DistanceCalculatorProcess {
-	
-	public double operation(double firstNumber,double secondNumber,String operator){
-		double result=0;
-		
-		switch (operator){
-		
-		case "+": result = firstNumber + secondNumber;		break;
-		case "-": result = firstNumber - secondNumber;		break;
-		default:System.out.println("Operator not good");	break;
+
+	public double operation(double firstNumber, double secondNumber, String operator) {
+		double result = 0;
+
+		switch (operator) {
+
+		case "+":
+			result = firstNumber + secondNumber;
+			break;
+		case "-":
+			result = firstNumber - secondNumber;
+			break;
+		default:
+			System.out.println("Operator not good");
+			break;
 		}
-		
+
 		return result;
 	}
 
