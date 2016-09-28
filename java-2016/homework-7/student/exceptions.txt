@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-09-28T23:12:55</date>
+  <millis>1475093575531</millis>
+  <sequence>1</sequence>
+  <logger>student.Main</logger>
+  <level>INFO</level>
+  <class>student.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Error with inputs</message>
+  <exception>
+    <message>student.ValidationException: The year is not good</message>
+    <frame>
+      <class>student.StudentRepository</class>
+      <method>addStudent</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>student.Main</class>
+      <method>main</method>
+      <line>25</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2016-09-28T23:12:55</date>
+  <millis>1475093575533</millis>
+  <sequence>2</sequence>
+  <logger>student.Main</logger>
+  <level>INFO</level>
+  <class>student.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>end main</message>
+</record>
+</log>
