@@ -2,7 +2,7 @@
  * The method receives as input a string that represents the unit in which the user whant's the data to be displayed and a double which is the measurement in meters 
  * The final value will be rounded.
  */
-package siit.java4.distancecalc;
+package siit.java4.distancecalculator;
 
 public class MetricToOtherUnitConverter {
 

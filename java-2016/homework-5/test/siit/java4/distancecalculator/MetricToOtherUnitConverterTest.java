@@ -1,4 +1,4 @@
-package test.siit.java4.distancecalc;
+package test.siit.java4.distancecalculator;
 
 import org.junit.Test;
 

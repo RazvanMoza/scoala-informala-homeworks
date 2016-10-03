@@ -2,9 +2,9 @@
  * In the stringConverter method receives a expression composed of different distances and the unit which he want's the output.
  * The expression must end with an "=" character
  */
-package siit.java4.distancecalc;
+package siit.java4.distancecalculator;
 
-public class DistanceCalculator {
+public class DistanceCalc {
 
 	public double stringConverter(String expression, String outputUnit) throws UnknownDistanceFormatException {
 
