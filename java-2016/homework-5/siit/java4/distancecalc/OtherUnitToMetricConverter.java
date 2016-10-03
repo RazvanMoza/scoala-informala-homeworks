@@ -1,7 +1,7 @@
 /**
  * The method in this class receives as input a string which is (km ,dm, m , cm, mm, foot, inch, miles) and then convers them into meters 
  */
-package DistanceCalc;
+package siit.java4.distancecalc;
 
 public class OtherUnitToMetricConverter {
 

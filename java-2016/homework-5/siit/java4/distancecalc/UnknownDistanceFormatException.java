@@ -1,7 +1,7 @@
 /**
  * Exception for when something in string is not good.
  */
-package DistanceCalc;
+package siit.java4.distancecalc;
 
 public class UnknownDistanceFormatException extends Exception {
 

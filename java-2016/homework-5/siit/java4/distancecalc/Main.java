@@ -2,7 +2,7 @@
  * In the main method receives from the user an expression composed of different distances with different units and the unit in which the user 
  * whant's the output.The result will be rounded up.
  */
-package DistanceCalc;
+package siit.java4.distancecalc;
 
 import java.util.Scanner;
 

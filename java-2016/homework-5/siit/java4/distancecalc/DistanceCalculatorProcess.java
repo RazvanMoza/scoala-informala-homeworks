@@ -1,7 +1,7 @@
 /**
  * The method receives 2 numbers and an operator which is (+ or -) and then sums or substract's the 2 numbers based on that operator
  */
-package DistanceCalc;
+package siit.java4.distancecalc;
 
 public class DistanceCalculatorProcess {
 

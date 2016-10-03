@@ -1,10 +1,11 @@
-package DistanceCalc;
+package test.siit.java4.distancecalc;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import DistanceCalc.DistanceCalculator;
-import DistanceCalc.UnknownDistanceFormatException;
+import siit.java4.distancecalc.DistanceCalculator;
+import siit.java4.distancecalc.MetricToOtherUnitConverter;
+import siit.java4.distancecalc.UnknownDistanceFormatException;
 
 
 public class DistanceCalculatorIntegrationTest {

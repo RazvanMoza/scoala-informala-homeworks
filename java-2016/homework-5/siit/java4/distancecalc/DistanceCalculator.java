@@ -2,7 +2,7 @@
  * In the stringConverter method receives a expression composed of different distances and the unit which he want's the output.
  * The expression must end with an "=" character
  */
-package DistanceCalc;
+package siit.java4.distancecalc;
 
 public class DistanceCalculator {
 
