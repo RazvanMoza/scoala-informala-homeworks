@@ -3,7 +3,7 @@
  * students by birth date , last name and retrieving a student with a specific age.
  * For all the methods there are specific exceptions for the input fields.  
  */
-package student;
+package siit.java4.student;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -11,11 +11,11 @@ import java.util.TreeSet;
 
 public class StudentRepository {
 
-	ArrayList<Student> students = new ArrayList<Student>();
-	TreeSet<Student> studentsOrderByBirthDate = new TreeSet<Student>(new StudentComparatorByBirthDate());
-	TreeSet<Student> studentsOrderByLastName = new TreeSet<Student>(new StudentComparatorByLastName());
-	ArrayList<Student> toRemove = new ArrayList<Student>();
-	ArrayList<Student> studentsRetrievedByCertainAge = new ArrayList<Student>();
+	public ArrayList<Student> students = new ArrayList<Student>();
+	public TreeSet<Student> studentsOrderByBirthDate = new TreeSet<Student>(new StudentComparatorByBirthDate());
+	public TreeSet<Student> studentsOrderByLastName = new TreeSet<Student>(new StudentComparatorByLastName());
+	public ArrayList<Student> toRemove = new ArrayList<Student>();
+	public ArrayList<Student> studentsRetrievedByCertainAge = new ArrayList<Student>();
 
 	public void addStudent(Student s) throws ValidationException {
 

@@ -1,7 +1,7 @@
 /**
  * In the Student class it is created a student with the following fields: firstName, lastName,dateOfBirth,gender,ID
  */
-package student;
+package siit.java4.student;
 
 public class Student {
 	String firstName;

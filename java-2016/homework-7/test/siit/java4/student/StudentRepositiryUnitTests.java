@@ -1,11 +1,17 @@
-package student;
+package test.siit.java4.student;
 
 import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.TreeSet;
 import org.junit.Test;
 
-public class OperationsUnitTests {
+import siit.java4.student.Student;
+import siit.java4.student.StudentComparatorByBirthDate;
+import siit.java4.student.StudentComparatorByLastName;
+import siit.java4.student.StudentRepository;
+import siit.java4.student.ValidationException;
+
+public class StudentRepositiryUnitTests {
 
 	@Test
 	public void correctAddOfStudents() throws ValidationException {
@@ -117,11 +123,11 @@ public class OperationsUnitTests {
 	public void studentsOrderedByBirthDate() throws ValidationException {
 		TreeSet<Student> list = new TreeSet<Student>(new StudentComparatorByBirthDate());
 		list.add(new Student("Roger", "Federer", 1983, "Male", 1831014));
-		list.add(new Student("Novak", "Djokovici", 1987, "Male", 1871014));
+		list.add(new Student("Novak", "Djokovici", 1983, "Male", 1871014));
 
 		StudentRepository O = new StudentRepository();
 		O.addStudent(new Student("Roger", "Federer", 1983, "Male", 1831014));
-		O.addStudent(new Student("Novak", "Djokovici", 1987, "Male", 1871014));
+		O.addStudent(new Student("Novak", "Djokovici", 1983, "Male", 1871014));
 
 		assertEquals(list, O.orderStudentsByBirthDate());
 	}
@@ -137,11 +143,11 @@ public class OperationsUnitTests {
 	public void studentsOrderedByLastName() throws ValidationException {
 		TreeSet<Student> list = new TreeSet<Student>(new StudentComparatorByLastName());
 		list.add(new Student("Roger", "Federer", 1983, "Male", 1831014));
-		list.add(new Student("Novak", "Djokovici", 1987, "Male", 1871014));
+		list.add(new Student("Novak", "Federer", 1987, "Male", 1871014));
 
 		StudentRepository O = new StudentRepository();
 		O.addStudent(new Student("Roger", "Federer", 1983, "Male", 1831014));
-		O.addStudent(new Student("Novak", "Djokovici", 1987, "Male", 1871014));
+		O.addStudent(new Student("Novak", "Federer", 1987, "Male", 1871014));
 
 		assertEquals(list, O.orderStudentsByLastName());
 	}

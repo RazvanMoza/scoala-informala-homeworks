@@ -1,0 +1,4 @@
+Oct 04, 2016 7:05:01 PM siit.java4.student.Main main
+INFO: start main
+Oct 04, 2016 7:05:01 PM siit.java4.student.Main main
+INFO: end main

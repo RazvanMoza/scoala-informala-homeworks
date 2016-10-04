@@ -1,10 +1,9 @@
 /**
  * In the Main class are declared students and then processed with different methods.
  */
-package student;
+package siit.java4.student;
 
 import java.io.IOException;
-import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,7 +17,7 @@ public class Main {
 		LOGGER.info("start main");
 
 		try {
-			LOGGER.addHandler(new FileHandler("exceptions.txt"));
+		
 			StudentRepository sr = new StudentRepository();
 
 			LOGGER.fine("before reading the students");

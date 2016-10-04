@@ -1,4 +1,4 @@
-package student;
+package siit.java4.student;
 
 public class ValidationException extends Exception{
 

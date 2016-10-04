@@ -1,6 +1,10 @@
-package student;
+package test.siit.java4.student;
 
 import org.junit.Test;
+
+import siit.java4.student.Student;
+import siit.java4.student.StudentRepository;
+import siit.java4.student.ValidationException;
 
 public class StudentIntegrationTest {
 
