@@ -1,7 +1,7 @@
 /**
  * The class SeniorityComparator compares the seniority of the Employees within the EmployeeList , and sortes them based on the seniority  
  */
-package CMS;
+package siit.java4.cms;
 
 import java.util.Comparator;
 
@@ -12,8 +12,9 @@ public class SeniorityComparator implements Comparator<Employee> {
 		if ((e1.getSeniority() < 0) || (e2.getSeniority() < 0)) {
 			throw new IllegalArgumentException("Seniority is not good");
 		} else {
-			if (e1.getSeniority() == e2.getSeniority()) {
-				return 0;
+			if ((e1.getSeniority() == e2.getSeniority())) {
+				int r=0;
+				return r == 0 ? e1.name.compareTo(e2.name) : r;
 			} else {
 				if (e1.getSeniority() > e2.getSeniority()) {
 					return 1;

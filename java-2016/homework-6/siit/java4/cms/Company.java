@@ -1,13 +1,13 @@
 /**
  * In the Company class it is created an ArrayList that is filled with employees.
  */
-package CMS;
+package siit.java4.cms;
 
 import java.util.ArrayList;
 
 public class Company {
 
-	public static void main(String[] args) throws CMSException {
+	public static void main(String[] args) {
 
 		ArrayList<Employee> employeList = new ArrayList<Employee>();
 
@@ -17,16 +17,20 @@ public class Company {
 		employeList.add(new Employee("Pit", true, 13, "Developer"));
 		employeList.add(new Employee("Daniel", false, 5, "Support"));
 		employeList.add(new Employee("Andrei", true, 16, "Tester"));
-		employeList.add(new Employee("Aurel", false, 14, "Support"));
+		employeList.add(new Employee("Aurel", false, 5, "Support"));
 
 		try {
-			new CompanyManagementSystem(employeList).operation();
+			CompanyManagementSystem cms = new CompanyManagementSystem(employeList);
+			System.out.println(cms.operation());
 			System.out.println(
 					"========================================================================================================================");
-			new InternalClassification(employeList).classification();
+			cms.classification();
+			System.out.println(cms.returnList("Managers"));
 
 		} catch (IllegalArgumentException e) {
 			System.out.println(e.getMessage());
+		} catch (CMSException f) {
+			System.out.println(f.getMessage());
 		}
 	}
 }

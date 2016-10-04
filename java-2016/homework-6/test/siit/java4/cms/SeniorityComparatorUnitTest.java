@@ -1,8 +1,11 @@
-package CMS;
+package test.siit.java4.cms;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import siit.java4.cms.Employee;
+import siit.java4.cms.SeniorityComparator;
 
 public class SeniorityComparatorUnitTest {
 

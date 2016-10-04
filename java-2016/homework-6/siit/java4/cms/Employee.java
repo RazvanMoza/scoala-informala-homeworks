@@ -1,7 +1,7 @@
 /**
  * The class Employee defines an employee by name, parcking space , seniority and role , and provides the getters for them.
  */
-package CMS;
+package siit.java4.cms;
 
 public class Employee {
 

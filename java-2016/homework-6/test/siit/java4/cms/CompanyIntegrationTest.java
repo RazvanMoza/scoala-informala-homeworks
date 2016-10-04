@@ -1,7 +1,11 @@
-package CMS;
+package test.siit.java4.cms;
 
 import java.util.ArrayList;
 import org.junit.Test;
+
+import siit.java4.cms.CMSException;
+import siit.java4.cms.CompanyManagementSystem;
+import siit.java4.cms.Employee;
 
 public class CompanyIntegrationTest {
 
@@ -18,7 +22,8 @@ public class CompanyIntegrationTest {
 		employeList.add(new Employee("Andrei", true, 16, "Tester"));
 		employeList.add(new Employee("Aurel", false, 14, "Support"));
 
-		new InternalClassification(employeList).classification();
+		new CompanyManagementSystem(employeList).classification();
+
 		System.out.println(
 				"========================================================================================================================");
 		new CompanyManagementSystem(employeList).operation();
