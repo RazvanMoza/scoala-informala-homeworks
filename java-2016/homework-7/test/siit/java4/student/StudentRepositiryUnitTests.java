@@ -1,4 +1,4 @@
-package test.siit.java4.student;
+package siit.java4.student;
 
 import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;

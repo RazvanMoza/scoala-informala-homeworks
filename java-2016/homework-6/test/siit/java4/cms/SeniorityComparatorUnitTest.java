@@ -1,4 +1,4 @@
-package test.siit.java4.cms;
+package siit.java4.cms;
 
 import static org.junit.Assert.assertEquals;
 

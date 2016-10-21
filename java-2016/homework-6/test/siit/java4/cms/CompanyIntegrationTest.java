@@ -1,4 +1,4 @@
-package test.siit.java4.cms;
+package siit.java4.cms;
 
 import java.util.ArrayList;
 import org.junit.Test;
