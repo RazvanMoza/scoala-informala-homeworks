@@ -1,4 +1,4 @@
-package test.siit.java4.salariescomputation;
+package siit.java4.salariescomputation;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

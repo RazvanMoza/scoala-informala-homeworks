@@ -1,4 +1,4 @@
-package test.siit.java4.bubblesort;
+package siit.java4.bubblesort;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

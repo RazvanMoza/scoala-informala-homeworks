@@ -1,11 +1,11 @@
-package test.siit.java4.distancecalculator;
+package siit.java4.distancecalculator;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import siit.java4.distancecalc.DistanceCalculator;
-import siit.java4.distancecalc.MetricToOtherUnitConverter;
-import siit.java4.distancecalc.UnknownDistanceFormatException;
+import siit.java4.distancecalculator.DistanceCalc;
+import siit.java4.distancecalculator.MetricToOtherUnitConverter;
+import siit.java4.distancecalculator.UnknownDistanceFormatException;
 
 
 public class DistanceCalculatorIntegrationTest {
@@ -14,7 +14,7 @@ public class DistanceCalculatorIntegrationTest {
 	public void distanceCalculatorWorksWithCorrectInput() throws UnknownDistanceFormatException {
 		// given
 		String s = "25miles+15km+300m=";
-		DistanceCalculator DC = new DistanceCalculator();
+		DistanceCalc DC = new DistanceCalc();
 		// when
 		double result = DC.stringConverter(s,"m");
 		// then

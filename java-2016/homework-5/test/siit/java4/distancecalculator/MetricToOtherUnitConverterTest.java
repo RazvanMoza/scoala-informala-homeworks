@@ -1,9 +1,9 @@
-package test.siit.java4.distancecalculator;
+package siit.java4.distancecalculator;
 
 import org.junit.Test;
 
-import siit.java4.distancecalc.MetricToOtherUnitConverter;
-import siit.java4.distancecalc.UnknownDistanceFormatException;
+import siit.java4.distancecalculator.MetricToOtherUnitConverter;
+import siit.java4.distancecalculator.UnknownDistanceFormatException;
 
 import static org.junit.Assert.*;
 
